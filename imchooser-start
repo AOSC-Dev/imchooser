@@ -1,0 +1,6 @@
+IMCHOSEN=`cat /etc/xdg/imchooser/im.conf`
+
+export GTK_IM_MODULE=$IMCHOSEN
+export QT_IM_MODULE=$IMCHOSEN
+export QT5_IM_MODULE=$IMCHOSEN
+export XMODIFIERS=@im=$IMCHOSEN
