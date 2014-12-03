@@ -1,0 +1,22 @@
+# Usage: imchooser [ fcitx / ibus / scim ]
+
+case $1 in
+fcitx)
+  echo "Selecting fcitx..."
+  IM=fcitx
+  ;;
+ibus)
+  echo "Selecting ibus..."
+  IM=ibus
+  ;;
+scim)
+  echo "Selecting scim..."
+  IM=scim
+  ;;
+*)
+  echo "Invalid choice!"
+  exit 1
+  ;;
+esac
+
+echo $1 | tee /etc/xdg/imchooser/im.conf > /dev/null
