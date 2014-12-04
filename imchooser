@@ -19,4 +19,4 @@ scim)
   ;;
 esac
 
-echo $1 | tee /etc/xdg/imchooser/im.conf > /dev/null
+echo $1 | tee $HOME/.imchooser > /dev/null
