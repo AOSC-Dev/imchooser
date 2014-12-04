@@ -23,7 +23,7 @@ postinst)
   ;;
 esac
 
-echo $1 | tee $HOME/.im > /dev/null
+echo $IM | tee $HOME/.im > /dev/null
 
 rm -f ~/.imchooser || true
 
