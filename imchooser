@@ -13,10 +13,6 @@ scim)
   echo "Selecting scim..."
   IM=scim
   ;;
-postinst)
-  echo "post-installation configure (fcitx)..."
-  IM=fcitx
-  ;;
 *)
   echo "Invalid choice!"
   exit 1
