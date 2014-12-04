@@ -19,4 +19,17 @@ scim)
   ;;
 esac
 
-echo $1 | tee $HOME/.imchooser > /dev/null
+echo $1 | tee $HOME/.im > /dev/null
+
+rm -f ~/.imchooser || true
+
+IMCHOSEN=`cat ~/.im`
+
+echo export GTK_IM_MODULE=$IMCHOSEN > ~/.xprofile
+echo export GTK_IM_MODULE=$IMCHOSEN > ~/.xinitrc
+echo export QT_IM_MODULE=$IMCHOSEN >> ~/.xprofile
+echo export QT_IM_MODULE=$IMCHOSEN >> ~/.xinitrc
+echo export QT5_IM_MODULE=$IMCHOSEN >> ~/.xprofile
+echo export QT5_IM_MODULE=$IMCHOSEN >> ~/.xinitrc
+echo export XMODIFIERS=@im=$IMCHOSEN >> ~/.xprofile
+echo export XMODIFIERS=@im=$IMCHOSEN >> ~/.xinitrc
