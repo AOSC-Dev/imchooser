@@ -3,14 +3,21 @@
 case $1 in
 fcitx)
   echo "Selecting fcitx..."
+  # Necesity for GNOME Shell.
+  gsettings set org.gnome.settings-daemon.plugins.keyboard active false
+  echo "Please go to https://extensions.gnome.org and install KIMPanel for Fcitx to work."
   IM=fcitx
   ;;
 ibus)
   echo "Selecting ibus..."
+  gsettings set org.gnome.settings-daemon.plugins.keyboard active true
   IM=ibus
   ;;
 scim)
   echo "Selecting scim..."
+  # Necesity for GNOME Shell.
+  gsettings set org.gnome.settings-daemon.plugins.keyboard active false
+  echo "Please go to https://extensions.gnome.org and install KIMPanel for Fcitx to work."
   IM=scim
   ;;
 *)
