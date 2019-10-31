@@ -27,8 +27,8 @@ fi
 
 rm -f ~/.imchooser || true
 
-echo export GTK_IM_MODULE="$IM" > ~/.xprofile
-echo export GTK_IM_MODULE="$IM" > ~/.xinitrc
+echo export GTK_IM_MODULE="$IM" >> ~/.xprofile
+echo export GTK_IM_MODULE="$IM" >> ~/.xinitrc
 echo export QT_IM_MODULE="$IM" >> ~/.xprofile
 echo export QT_IM_MODULE="$IM" >> ~/.xinitrc
 echo export QT5_IM_MODULE="$IM" >> ~/.xprofile
