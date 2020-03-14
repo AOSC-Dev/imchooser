@@ -4,7 +4,7 @@ case $1 in
 fcitx)
   IM=fcitx
   ;;
-fcitx5）
+fcitx5)
   IM=fcitx5
   ;;
 ibus)
