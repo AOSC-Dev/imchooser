@@ -16,7 +16,7 @@ scim)
 *)
   echo -e "\
 Invalid choice!
-Usage: imchooser [ fcitx / ibus / scim ]"
+Usage: imchooser [ fcitx / fcitx5 / ibus / scim ]"
   exit 1
   ;;
 esac
