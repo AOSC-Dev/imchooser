@@ -4,6 +4,9 @@ case $1 in
 fcitx)
   IM=fcitx
   ;;
+fcitx5）
+  IM=fcitx5
+  ;;
 ibus)
   IM=ibus
   ;;
